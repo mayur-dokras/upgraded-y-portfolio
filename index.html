@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yukta Soman | Project Coordinator & PMO Portfolio</title>
   <meta name="description" content="Yukta Soman: project coordinator and MSc Project Management (Distinction) graduate. Planning, RAID, quality assurance and stakeholder delivery. Open to UK project coordination and PMO roles.">
-  <meta name="theme-color" content="#0C1222">
+  <meta name="theme-color" content="#00020D">
   <meta property="og:title" content="Yukta Soman | Project Coordinator & PMO Portfolio">
-  <meta property="og:description" content="Plans, risks and people kept in step. Selected project work, experience and evidence.">
+  <meta property="og:description" content="Plans, risks and people. Kept in step.">
   <meta property="og:image" content="assets/img/portrait.webp">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Space backdrop -->
+  <div class="space" aria-hidden="true">
+    <div class="nebula n1"></div>
+    <div class="nebula n2"></div>
+    <div class="nebula n3"></div>
+    <canvas id="galaxy"></canvas>
+  </div>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Yukta Soman, back to top">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="6" width="14" height="4" rx="2"/><rect x="9" y="14" width="16" height="4" rx="2"/><rect x="15" y="22" width="14" height="4" rx="2"/></svg>
+      <span class="brand-glyph" aria-hidden="true"><i></i><i></i><i></i></span>
       <span>Yukta Soman</span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -37,97 +45,98 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="hero-status"><span class="rag rag-g" aria-hidden="true"></span>Open to project coordinator and PMO roles in the UK</p>
-        <h1>Yukta Soman</h1>
-        <p class="hero-lede">Project coordinator for teams that need the plan, the risks and the people kept in step.</p>
-        <p class="hero-sub">MSc Project Management with Distinction from the University of Southampton, an engineering background, and 20+ client projects coordinated across software, digital, creative and technical teams.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">See case studies</a>
-          <a class="btn btn-ghost" href="Yukta-Soman-Project-Management-CV.pdf" download>Download CV</a>
+        <p class="label reveal" style="--d:0">Introducing</p>
+        <h1 class="display reveal" style="--d:1">
+          <span class="line">Yukta</span>
+          <span class="line astra">Soman.</span>
+        </h1>
+        <p class="hero-role reveal" style="--d:2">Project Coordinator &amp; PMO Analyst</p>
+        <p class="mono-line reveal" style="--d:3">Plans, risks and people. Kept in step.</p>
+        <div class="hero-actions reveal" style="--d:4">
+          <a class="btn btn-light" href="#work">See case studies</a>
+          <a class="btn btn-glass" href="Yukta-Soman-Project-Management-CV.pdf" download>Download CV</a>
         </div>
       </div>
 
-      <div class="hero-scene" id="scene">
-        <div class="stack" id="stack" aria-label="Illustration: a project plan shown as four stacked layers: scope, schedule, risks and delivery" role="img">
-          <div class="layer layer-scope" style="--i:0">
-            <span class="layer-name">Scope</span>
-            <div class="wbs">
-              <div class="wbs-root"></div>
-              <div class="wbs-row"><div></div><div></div><div></div></div>
-              <div class="wbs-row small"><div></div><div></div><div></div><div></div><div></div><div></div></div>
-            </div>
-          </div>
-          <div class="layer layer-schedule" style="--i:1">
-            <span class="layer-name">Schedule</span>
-            <div class="gantt-mini">
-              <i style="--s:0;--w:34"></i><i style="--s:22;--w:30"></i><i style="--s:40;--w:28"></i><i style="--s:56;--w:26"></i><i style="--s:70;--w:22"></i>
-              <b class="milestone" style="--s:92"></b>
-            </div>
-          </div>
-          <div class="layer layer-risk" style="--i:2">
-            <span class="layer-name">Risks</span>
-            <div class="heat" id="heat"></div>
-          </div>
-          <div class="layer layer-delivery" style="--i:3">
-            <span class="layer-name">Delivery</span>
-            <ul class="checks">
-              <li>Acceptance criteria met</li>
-              <li>UAT signed off</li>
-              <li>Handover complete</li>
-            </ul>
-            <div class="progress"><span></span></div>
-          </div>
+      <div class="hero-badge reveal" style="--d:5">
+        <img src="assets/img/portrait.webp" alt="Portrait of Yukta Soman" width="900" height="900">
+        <div>
+          <p class="label small">Status</p>
+          <p><span class="pulse" aria-hidden="true"></span>Open to UK roles</p>
         </div>
-
-        <figure class="hero-portrait">
-          <img src="assets/img/portrait.webp" alt="Portrait of Yukta Soman" width="900" height="900">
-          <figcaption><strong>APM Wessex</strong> Project Management Challenge winner, 2025</figcaption>
-        </figure>
       </div>
+
+      <a class="scroll-cue" href="#ask" aria-label="Scroll to the next section"><span></span></a>
     </section>
 
-    <!-- STATUS REPORT STRIP -->
-    <section class="report" aria-label="Career highlights">
-      <div class="report-head">
-        <span>Status report</span>
-        <span><span class="rag rag-g" aria-hidden="true"></span>On track</span>
+    <!-- ASK THE PORTFOLIO -->
+    <section class="ask" id="ask">
+      <p class="label center">Ask the portfolio</p>
+      <form class="prompt glass edge" id="prompt" autocomplete="off">
+        <label for="prompt-input" class="visually-hidden">Ask about Yukta's experience</label>
+        <textarea id="prompt-input" rows="2" spellcheck="false"></textarea>
+        <div class="prompt-bar">
+          <span class="model"><span class="model-icon" aria-hidden="true"></span>Yukta Soman <span class="model-sub">PMO</span></span>
+          <button class="send" type="submit" aria-label="Go to the matching section">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </form>
+      <div class="chips-row" aria-label="Suggested questions">
+        <button type="button" data-q="Show me how Yukta manages risk">Risk management</button>
+        <button type="button" data-q="Walk me through her experience">Experience</button>
+        <button type="button" data-q="Which projects has she delivered?">Case studies</button>
+        <button type="button" data-q="What tools and skills does she use?">Skills</button>
+        <button type="button" data-q="How do I contact Yukta?">Contact</button>
       </div>
-      <dl class="report-grid">
-        <div><dt>Client projects coordinated</dt><dd>20+</dd></div>
-        <div><dt>Risks managed on Kultura</dt><dd>25</dd></div>
-        <div><dt>People in the organisation I coordinated across</dt><dd>32</dd></div>
-        <div><dt>MSc Project Management</dt><dd>Distinction</dd></div>
+      <p class="prompt-result" id="prompt-result" aria-live="polite"></p>
+    </section>
+
+    <!-- STATEMENT + METRICS -->
+    <section class="statement">
+      <p class="label center">Featuring an MSc with Distinction</p>
+      <h2 class="statement-title">Bring structure to<br><span class="astra">busy projects.</span></h2>
+      <p class="flow"><span>Scope</span><span class="arrow">→</span><span>Plan</span><span class="arrow">→</span><span>Control</span><span class="arrow">→</span><span>Deliver</span></p>
+      <dl class="metrics">
+        <div class="glass edge"><dd data-count="20" data-suffix="+">20+</dd><dt>Client projects coordinated</dt></div>
+        <div class="glass edge"><dd data-count="25">25</dd><dt>Risks managed on Kultura</dt></div>
+        <div class="glass edge"><dd data-count="32">32</dd><dt>People across the organisation</dt></div>
+        <div class="glass edge"><dd>1st</dd><dt>APM Wessex PM Challenge 2025</dt></div>
       </dl>
     </section>
 
     <!-- APPROACH -->
     <section class="section" id="approach">
       <div class="section-head">
-        <h2>How I run a project</h2>
-        <p>The same four phases sit behind every piece of work on this page, whether it was a four-week client brief or eighteen months of concurrent delivery.</p>
+        <p class="label">How I work</p>
+        <h2 class="headline">Four phases.<br><span class="astra">Every project.</span></h2>
+        <p class="lede">Whether it was a four-week client brief or eighteen months of concurrent delivery, the same structure sits underneath.</p>
       </div>
       <ol class="phases">
-        <li>
-          <span class="phase-bar" style="--w:28%"></span>
+        <li class="glass edge tilt">
+          <span class="label small">Phase 01</span>
           <h3>Clarify the brief</h3>
           <p>Turn an open request into scope, success criteria and a shared picture of who needs what.</p>
+          <span class="phase-meter" style="--w:25%"></span>
         </li>
-        <li>
-          <span class="phase-bar" style="--w:52%"></span>
+        <li class="glass edge tilt">
+          <span class="label small">Phase 02</span>
           <h3>Plan the work</h3>
           <p>WBS, schedule, milestones, owners and dependencies, written so the team can act on them on Monday.</p>
+          <span class="phase-meter" style="--w:50%"></span>
         </li>
-        <li>
-          <span class="phase-bar" style="--w:76%"></span>
+        <li class="glass edge tilt">
+          <span class="label small">Phase 03</span>
           <h3>Keep control</h3>
           <p>RAID logs, action trackers, MoMs and status reports. Blockers raised early, with their cost or schedule impact.</p>
+          <span class="phase-meter" style="--w:75%"></span>
         </li>
-        <li>
-          <span class="phase-bar" style="--w:100%"></span>
+        <li class="glass edge tilt">
+          <span class="label small">Phase 04</span>
           <h3>Deliver and hand over</h3>
           <p>Quality checks against acceptance criteria, UAT, approvals and a handover the client can rely on.</p>
+          <span class="phase-meter" style="--w:100%"></span>
         </li>
       </ol>
     </section>
@@ -135,38 +144,42 @@
     <!-- EXPERIENCE GANTT -->
     <section class="section" id="timeline">
       <div class="section-head">
-        <h2>Experience, as a schedule</h2>
-        <p>Select a bar to open the role.</p>
+        <p class="label">Experience</p>
+        <h2 class="headline">A career,<br><span class="astra">as a schedule.</span></h2>
+        <p class="lede">Select any bar to open the role.</p>
       </div>
-      <div class="legend" aria-hidden="true">
-        <span><i class="k-work"></i>Employment</span>
-        <span><i class="k-client"></i>Client project</span>
-        <span><i class="k-lead"></i>Leadership</span>
-        <span><i class="k-edu"></i>Education</span>
+      <div class="glass edge gantt-shell">
+        <div class="legend" aria-hidden="true">
+          <span><i class="k-work"></i>Employment</span>
+          <span><i class="k-client"></i>Client project</span>
+          <span><i class="k-lead"></i>Leadership</span>
+          <span><i class="k-edu"></i>Education</span>
+        </div>
+        <div class="gantt" id="gantt">
+          <div class="gantt-axis" id="gantt-axis" aria-hidden="true"></div>
+          <div class="gantt-rows" id="gantt-rows" role="tablist" aria-label="Roles and education by date"></div>
+        </div>
       </div>
-      <div class="gantt" id="gantt">
-        <div class="gantt-axis" id="gantt-axis" aria-hidden="true"></div>
-        <div class="gantt-rows" id="gantt-rows" role="tablist" aria-label="Roles and education by date"></div>
-      </div>
-      <article class="role-panel" id="role-panel" role="tabpanel" aria-live="polite"></article>
+      <article class="role-panel glass edge" id="role-panel" role="tabpanel" aria-live="polite"></article>
     </section>
 
     <!-- CASE STUDIES -->
     <section class="section" id="work">
       <div class="section-head">
-        <h2>Case studies</h2>
-        <p>The context, what I did, and what changed because of it.</p>
+        <p class="label">Case studies</p>
+        <h2 class="headline">Selected work.<br><span class="astra">Real outcomes.</span></h2>
+        <p class="lede">The context, what I did, and what changed because of it.</p>
       </div>
 
       <div class="cases">
-        <article class="case" style="--n:0">
+        <article class="case glass edge" style="--n:0">
           <div class="case-media layered">
             <img src="assets/img/kultura-prototype.webp" alt="Kultura mobile prototype screens showing cultural content, registration, the artisan marketplace and local events" loading="lazy" width="1400" height="787">
             <img class="inset" src="assets/img/kultura-checklist.svg" alt="Extract from the Kultura project assurance checklist covering scope, stakeholders, governance, planning, risk and reporting" loading="lazy">
           </div>
           <div class="case-body">
-            <p class="case-tag"><span class="badge">Winner, APM Wessex PM Challenge 2025</span></p>
-            <h3>Kultura</h3>
+            <p class="label small">Winner · APM Wessex PM Challenge 2025</p>
+            <h3>Kultura<span class="astra">.</span></h3>
             <p class="case-role">Quality Assurance Lead, University of Southampton client project, Oct 2024 to May 2025</p>
             <dl class="case-facts">
               <div><dt>Context</dt><dd>A cultural exchange and artisan-support platform built by an international, multidisciplinary student team for a real client.</dd></div>
@@ -176,13 +189,13 @@
           </div>
         </article>
 
-        <article class="case" style="--n:1">
+        <article class="case glass edge" style="--n:1">
           <div class="case-media contain">
             <img src="assets/img/borgward-delivery.svg" alt="Non-confidential reconstruction of cross-functional project delivery responsibilities at Borgward Group" loading="lazy">
           </div>
           <div class="case-body">
-            <p class="case-tag"><span class="badge badge-amber">Recovered at-risk project</span></p>
-            <h3>Multi-project digital delivery</h3>
+            <p class="label small">Recovered an at-risk project</p>
+            <h3>Multi-project delivery<span class="astra">.</span></h3>
             <p class="case-role">Brand Development Manager, Borgward Group, Pune, Dec 2022 to Mar 2024</p>
             <dl class="case-facts">
               <div><dt>Context</dt><dd>20+ concurrent website, software, digital and creative projects across a 32-person organisation, reporting directly to the Director.</dd></div>
@@ -192,13 +205,13 @@
           </div>
         </article>
 
-        <article class="case" style="--n:2">
+        <article class="case glass edge" style="--n:2">
           <div class="case-media">
             <img src="assets/img/ufton-navigation.webp" alt="Operation Ufton Rescue concept slide describing a woodland navigation activity using maps, compasses and team challenges" loading="lazy" width="1600" height="900">
           </div>
           <div class="case-body">
-            <p class="case-tag"><span class="badge badge-teal">Concept shortlisted</span></p>
-            <h3>Exploring Navigation</h3>
+            <p class="label small">Concept shortlisted</p>
+            <h3>Exploring Navigation<span class="astra">.</span></h3>
             <p class="case-role">Project Lead, Ufton Court client project, Jan to Feb 2025</p>
             <dl class="case-facts">
               <div><dt>Context</dt><dd>A broad client brief with four weeks to respond.</dd></div>
@@ -208,13 +221,13 @@
           </div>
         </article>
 
-        <article class="case" style="--n:3">
+        <article class="case glass edge" style="--n:3">
           <div class="case-media">
             <img src="assets/img/digital-twin.webp" alt="Digital twin simulation showing two conveyor tracks and the central box-lifting mechanism" loading="lazy" width="1422" height="800">
           </div>
           <div class="case-body">
-            <p class="case-tag"><span class="badge badge-slate">Industry-sponsored</span></p>
-            <h3>Digital twin box-lifting system</h3>
+            <p class="label small">Industry-sponsored</p>
+            <h3>Digital twin system<span class="astra">.</span></h3>
             <p class="case-role">Final-year engineering project, AISSMS IOIT, Pune</p>
             <dl class="case-facts">
               <div><dt>Context</dt><dd>An 8.5-month sensor-led automation project simulated in iPhysics Player.</dd></div>
@@ -229,10 +242,11 @@
     <!-- SKILLS MATRIX -->
     <section class="section" id="skills">
       <div class="section-head">
-        <h2>Skills, traced to evidence</h2>
-        <p>Every capability below maps to where I have actually used it.</p>
+        <p class="label">Skills &amp; tools</p>
+        <h2 class="headline">Every skill,<br><span class="astra">traced to evidence.</span></h2>
+        <p class="lede">Each capability maps to where I have actually used it.</p>
       </div>
-      <div class="matrix-wrap" tabindex="0" aria-label="Skills evidence matrix, scrollable">
+      <div class="matrix-wrap glass edge" tabindex="0" aria-label="Skills evidence matrix, scrollable">
         <table class="matrix">
           <thead>
             <tr><th scope="col">Capability</th><th scope="col">Borgward</th><th scope="col">Kultura</th><th scope="col">Ufton Court</th><th scope="col">AIESEC</th><th scope="col">MSc</th></tr>
@@ -242,15 +256,15 @@
       </div>
       <div class="toolkit">
         <div>
-          <h3>Tools</h3>
+          <p class="label small">Tools</p>
           <ul class="chips"><li>Microsoft Project</li><li>Jira</li><li>Excel</li><li>Google Sheets</li><li>Asana</li><li>Monday.com</li><li>ClickUp</li><li>Notion</li><li>Teams</li><li>SharePoint</li><li>PowerPoint</li></ul>
         </div>
         <div>
-          <h3>Methods</h3>
+          <p class="label small">Methods</p>
           <ul class="chips"><li>Agile</li><li>Scrum</li><li>Kanban</li><li>Waterfall</li><li>Hybrid</li><li>MoSCoW</li></ul>
         </div>
         <div>
-          <h3>Languages</h3>
+          <p class="label small">Languages</p>
           <ul class="chips"><li>English, fluent</li><li>Hindi, native</li><li>Marathi, fluent</li></ul>
         </div>
       </div>
@@ -259,31 +273,33 @@
     <!-- EDUCATION & RECOGNITION -->
     <section class="section" id="education">
       <div class="section-head">
-        <h2>Education and recognition</h2>
+        <p class="label">Education &amp; recognition</p>
+        <h2 class="headline">Formal learning.<br><span class="astra">Applied to delivery.</span></h2>
       </div>
       <div class="edu">
-        <figure class="award">
+        <figure class="award glass edge">
           <img src="assets/img/apm-award.jpg" alt="Yukta Soman holding her APM Project Management Challenge 2025 winner certificate and trophy" loading="lazy" width="960" height="1280">
           <figcaption>
-            <strong>APM Wessex Region Project Management Challenge, winner 2025</strong>
+            <span class="label small">2025 · APM Wessex Region</span>
+            <strong>Project Management Challenge winner</strong>
             Team Kultura, as Quality Assurance Lead
           </figcaption>
         </figure>
         <div class="edu-list">
-          <article>
-            <p class="edu-date">2024 to 2025</p>
+          <article class="glass edge">
+            <p class="label small">2024 – 2025</p>
             <h3>MSc Project Management, Distinction</h3>
             <p class="edu-org">University of Southampton</p>
             <p>Dean's List for outstanding achievement. Dissertation (72%) analysed procurement-phase construction risks using survey data from 54 professionals.</p>
           </article>
-          <article>
-            <p class="edu-date">2018 to 2022</p>
+          <article class="glass edge">
+            <p class="label small">2018 – 2022</p>
             <h3>BE Instrumentation and Control Engineering</h3>
             <p class="edu-org">AISSMS IOIT, Pune</p>
             <p>CGPA 8.72/10 with Distinction. A foundation in automation, systems thinking, testing and technical documentation, plus a research publication on digital twins.</p>
           </article>
-          <article>
-            <h3>Certifications</h3>
+          <article class="glass edge">
+            <p class="label small">Certifications</p>
             <ul class="cert-list">
               <li>PMI Kickoff: Agile and Predictive Project Management</li>
               <li>Cognitive Project Management in AI, PMI</li>
@@ -297,23 +313,41 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-      <div class="contact-inner">
-        <h2>Need someone to keep your next project on track?</h2>
-        <p>I'm looking for Project Coordinator, PMO Analyst, Project Support and Assistant Project Manager roles across the UK. I can work in the UK under the Graduate Route, I'm open to relocation, and I can start at short notice.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:yuktasoman8@gmail.com">Email Yukta</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/yukta-soman-535a0519a" target="_blank" rel="noreferrer">LinkedIn profile</a>
+      <div class="contact-card glass edge tilt">
+        <div class="contact-copy">
+          <p class="label small">A space for your next project</p>
+          <h2 class="headline">Your next project.<br><span class="astra">Kept on track.</span></h2>
+          <p>I'm looking for Project Coordinator, PMO Analyst, Project Support and Assistant Project Manager roles across the UK. I can work in the UK under the Graduate Route, I'm open to relocation, and I can start at short notice.</p>
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:yuktasoman8@gmail.com">Email Yukta</a>
+            <a class="btn btn-glass" href="https://www.linkedin.com/in/yukta-soman-535a0519a" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <p class="downloads">
+            <a href="Yukta-Soman-Project-Management-CV.pdf" download>Download CV (PDF)</a>
+            <a href="Yukta-Soman-Project-Management-Portfolio.pdf" download>Download evidence portfolio (PDF)</a>
+          </p>
         </div>
-        <p class="downloads">
-          <a href="Yukta-Soman-Project-Management-CV.pdf" download>Download CV (PDF)</a>
-          <a href="Yukta-Soman-Project-Management-Portfolio.pdf" download>Download evidence portfolio (PDF)</a>
-        </p>
+        <svg class="orbit-art" viewBox="0 0 240 240" aria-hidden="true">
+          <defs>
+            <radialGradient id="sg"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#cfe0ff" stop-opacity=".8"/><stop offset="1" stop-color="#8fb0ff" stop-opacity="0"/></radialGradient>
+          </defs>
+          <g class="orbit-spin">
+            <ellipse cx="120" cy="120" rx="104" ry="40" fill="none" stroke="rgba(200,220,255,.35)" stroke-width="1" stroke-dasharray="2 5" transform="rotate(-18 120 120)"/>
+            <ellipse cx="120" cy="120" rx="86" ry="30" fill="none" stroke="rgba(200,220,255,.5)" stroke-width="1" transform="rotate(-18 120 120)"/>
+            <circle cx="208" cy="92" r="3.5" fill="#dfe9ff"/>
+            <circle cx="40" cy="142" r="2.5" fill="#dfe9ff"/>
+          </g>
+          <circle cx="120" cy="120" r="34" fill="url(#sg)"/>
+          <path d="M120 78v84M78 120h84" stroke="#fff" stroke-width="1.2" opacity=".85"/>
+          <path d="M106 106l28 28M134 106l-28 28" stroke="#fff" stroke-width=".8" opacity=".5"/>
+          <circle cx="120" cy="120" r="5" fill="#fff"/>
+        </svg>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year">2026</span> Yukta Soman, Southampton, UK</p>
+    <p>© <span id="year">2026</span> Yukta Soman · Southampton, UK</p>
     <a href="#top">Back to top</a>
   </footer>
 
